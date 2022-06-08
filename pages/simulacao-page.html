@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>⚽ Society Ouro Fino</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/header-footer.css" />
+    <link rel="stylesheet" href="./css/index-style.css" />
+    <link rel="stylesheet" href="./../css/simulacao.css" />
+  </head>
+  <body>
+    <header>
+      <div class="caixa">
+        <h1 id="img-logo">Society Ouro Fino</h1>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/fotos-page.html">Fotos</a></li>
+            <li><a href="../pages/contato-page.html">Contato</a></li>
+            <li>
+              <a href="../pages/simulacao-page.html" id="a__simulacao"
+                >Simule aqui!</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h1 class="title__page">Faça aqui a simulação da sua diversão!</h1>
+      <div class="container p-5">
+        <div class="card p-5">
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="horas" id="label__horas">Horas</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="horas"
+                  min="0"
+                  step="0.5"
+                  placeholder="Insira aqui a quantidade de horas que deseja jogar"
+                />
+              </div>
+              <div class="form-group col-md-6">
+                <label for="preco" id="label__preco">Preço</label>
+                <p class="text-center" id="preco">R$00,00</p>
+              </div>
+            </div>
+            <button
+              id="btnCalc"
+              type="submit"
+              class="btn container"
+              onclick="calcular()"
+            >
+              Calcular
+            </button>
+            <h1 id="res"></h1>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <!-- <img src="logo.png" /> -->
+      <p class="copyright">&copy; Copyright Society Ouro Fino | 2022</p>
+    </footer>
+    <!-- FINISH -->
+    <script src="./../js/simulacao.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

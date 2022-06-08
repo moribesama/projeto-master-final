@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+
+header {
+	background: #a3b18a91;
+	padding: 20px 0;
+}
+
+.caixa {
+	display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#img-logo{
+    font-family: 'Playball', cursive;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: red; */
+    font-size: 70px;
+    /* font-family: 'Tangerine', cursive; */
+    /* font-family: 'Tiro Devanagari Sanskrit', serif; */
+    color: #588157;
+
+}
+
+
+/* nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
+} */
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+	color: #588157;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+  transition: 0.5s;
+}
+
+nav a:hover {
+	background-color: #DAD7CD;
+    text-decoration: none;
+    color: #344E41;
+}
+
+#a__simulacao{
+    animation: flashing 1s linear infinite;
+    
+}
+  @keyframes flashing {
+    50% {
+      opacity: .3;
+      background-color: lightgreen;
+    }
+    /* 20%{
+        opacity: 1;
+        background-color: white;
+    } */
+  }
+
+footer {
+	  text-align: center;
+	  background: url("./.././assets/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 100px;
+	  padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.copyright{
+    background-color: rgb(255, 255, 255, 0.7);
+}
+
+
+/* scroll */
+/* width */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

@@ -1,0 +1,26 @@
+.title__page{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0.5em;
+    color: #344E41;
+}
+
+#contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#button{
+    background-color: #A3B18A;
+    color: whitesmoke;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;    
+}
+

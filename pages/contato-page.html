@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>⚽ Society Ouro Fino</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/header-footer.css" />
+    <link rel="stylesheet" href="./css/index-style.css" />
+    <link rel="stylesheet" href="../css/contato.css" />
+  </head>
+  <body>
+    <header>
+      <div class="caixa">
+        <h1 id="img-logo">Society Ouro Fino</h1>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/fotos-page.html">Fotos</a></li>
+            <li><a href="../pages/contato-page.html">Contato</a></li>
+            <li>
+              <a href="../pages/simulacao-page.html" id="a__simulacao"
+                >Simule aqui!</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h1 class="title__page">Entramos em contato com você!</h1>
+      <form class="container mt-3 pt-5">
+        <div class="form-group card p-4">
+          <label for="nomesobrenome">Nome e Sobrenome</label>
+          <input type="text" id="nomesobrenome" class="input-padrao" required />
+
+          <label class="mt-2" for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            class="input-padrao"
+            required
+            placeholder="seuemail@dominio.com"
+          />
+
+          <label class="mt-2" for="telefone">Telefone</label>
+          <input
+            type="tel"
+            id="telefone"
+            class="input-padrao"
+            required
+            placeholder="(XX) XXXXX-XXXX"
+          />
+
+          <label class="mt-2" for="mensagem">Mensagem</label>
+          <textarea
+            placeholder="Digite sua mensagem..."
+            cols="70"
+            rows="10"
+            id="mensagem"
+            class="input-padrao"
+            required
+          ></textarea>
+
+          <form class="container">
+            <div class="card p-2" id="contato">
+              <div>
+                <legend>Como prefere o nosso contato?</legend>
+                <label for="radio-email"
+                  ><input
+                    type="radio"
+                    name="contato"
+                    value="email"
+                    id="radio-email"
+                  />
+                  Email</label
+                >
+
+                <label for="radio-telefone"
+                  ><input
+                    type="radio"
+                    name="contato"
+                    value="telefone"
+                    id="radio-telefone"
+                  />
+                  Telefone</label
+                >
+
+                <label for="radio-whatsapp"
+                  ><input
+                    type="radio"
+                    name="contato"
+                    value="whatsapp"
+                    id="radio-whatsapp"
+                    checked
+                  />
+                  WhatsApp</label
+                >
+              </div>
+              <button
+                id="button"
+                type="submit"
+                value="Enviar formulário"
+                class="btn mt-3 container mb-3"
+                onclick="alert('Mensagem enviada com sucesso!')"
+              >
+                Enviar
+              </button>
+            </div>
+          </form>
+        </div>
+      </form>
+    </main>
+    <a
+      style="
+        background-image: url(https://i.ibb.co/RvTJC4r/whatsapp.png);
+        border-radius: 34px;
+        width: 60px;
+        font-size: 0;
+        height: 60px;
+        position: fixed;
+        right: 10px;
+        z-index: 999;
+        display: block;
+        bottom: 10px;
+        background-size: 73%;
+        background-repeat: no-repeat;
+        background-color: #1bd741;
+        background-position: center;
+      "
+      target="_blank"
+      href="https://wa.me/5511951488515?text=Ol%C3%A1%2C%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
+      >link whatsapp</a
+    >
+
+    <footer>
+      <!-- <img src="logo.png" /> -->
+      <p class="copyright">&copy; Copyright Society Ouro Fino | 2022</p>
+    </footer>
+    <!-- FINISH -->
+    <script src="../js/contato.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
